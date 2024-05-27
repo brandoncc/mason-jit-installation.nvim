@@ -3,14 +3,14 @@
 This is a wrapper for
 [mason-lspconfig-jit-installation.nvim](https://github.com/brandoncc/mason-lspconfig-jit-installation.nvim)
 and
-[mason-null-ls-jit-installation.nvim](https://github.com/brandoncc/mason-null-ls-jit-installation.nvim)
-which allows you to specify your LSP servers and null-ls or none-ls sources in
-one place.
+[mason-null-ls-jit-installation.nvim](https://github.com/brandoncc/mason-null-ls-jit-installation.nvim).
+The wrapper allows you to specify your LSP servers and null-ls/none-ls
+sources in one place.
 
 ## Setup
 
 `require('mason-jit-installation').setup()` should be called with an options
-table. Valid options keys are `lspconfig` and `"null-ls"`.
+table. Valid options keys are `lspconfig` and `"null-ls"`. Each key's value should be specified according to the documentation for the relevant plugin.
 
 I use lazy.nvim, so that is the example I'm adding. I will happily accept pull
 requests adding more examples.
